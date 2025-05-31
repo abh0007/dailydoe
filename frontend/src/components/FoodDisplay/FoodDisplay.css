@@ -1,0 +1,33 @@
+.explore-menu-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.explore-menu-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+.explore-menu-list-item img.active {
+  border: 2px solid #ff9900;
+  transform: scale(1.05);
+}
+
+.explore-menu-list-item p {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+.food-display-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
