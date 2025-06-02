@@ -1,58 +1,3 @@
-.food-item {
-  display: flex;
-  gap: 16px;
-  background: #fff;
-  padding: 16px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  margin: 16px 0;
-  align-items: center;
-  width: 100%;
-}
-
-.food-item-img-container {
-  position: relative;
-  flex-shrink: 0;
-}
-
-.food-item-image {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.add {
-  position: absolute;
-  bottom: 6px;
-  right: 6px;
-  width: 28px;
-  height: 28px;
-  cursor: pointer;
-}
-
-.food-item-counter {
-  position: absolute;
-  bottom: 6px;
-  right: 6px;
-  background: white;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 2px 8px;
-}
-
-.food-item-counter img {
-  width: 18px;
-  cursor: pointer;
-}
-
-.food-item-counter p {
-  margin: 0;
-  font-weight: 600;
-}
-
 .food-item-info {
   display: flex;
   flex-direction: column;
@@ -83,6 +28,13 @@
   margin: 0;
 }
 
+/* Price and add button in one row */
+.food-item-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .food-item-price {
   font-size: 15px;
   font-weight: 600;
@@ -90,7 +42,31 @@
   margin: 0;
 }
 
-/* Responsive — Keep horizontal layout */
+.add {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.food-item-counter {
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 8px;
+}
+
+.food-item-counter img {
+  width: 18px;
+  cursor: pointer;
+}
+
+.food-item-counter p {
+  margin: 0;
+  font-weight: 600;
+}
+
 @media (max-width: 600px) {
   .food-item {
     gap: 12px;
