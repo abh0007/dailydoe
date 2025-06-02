@@ -3,7 +3,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white; /* Required for sticky to work nicely */
+    z-index: 1000; /* To stay above other elements */
 }
+
 
 .navbar .logo {
     width: 180px;
