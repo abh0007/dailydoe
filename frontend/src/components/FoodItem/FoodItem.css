@@ -118,3 +118,41 @@
     width: 60px;
   }
 }
+.food-item-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.add-to-cart-btn {
+  background-color: tomato;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #e44b2d;
+}
+
+@media (max-width: 600px) {
+  .food-item-price-row {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .add-to-cart-btn {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .food-item-price {
+    font-size: 14px;
+  }
+}
