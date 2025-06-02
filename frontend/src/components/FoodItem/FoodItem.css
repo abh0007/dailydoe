@@ -32,15 +32,16 @@
 }
 
 .food-item-counter {
-  position: absolute;
-  bottom: 6px;
-  right: 6px;
-  background: white;
-  border-radius: 20px;
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 2px 8px;
+  gap: 8px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 4px 10px;
+  height: 32px;
+  margin-left: auto; /* Push it to the right */
+  position: static; /* ✅ remove absolute positioning */
 }
 
 .food-item-counter img {
