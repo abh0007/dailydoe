@@ -156,3 +156,54 @@
     font-size: 14px;
   }
 }
+.food-item-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.add-to-cart-btn {
+  background-color: tomato;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #e44b2d;
+}
+
+.food-item-img-container .add {
+  display: none !important; /* Hides any leftover floating icon */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .food-item-price-row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .add-to-cart-btn {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .food-item-price {
+    font-size: 14px;
+  }
+
+  .food-item-counter img {
+    width: 16px;
+  }
+
+  .food-item-counter p {
+    font-size: 14px;
+  }
+}
