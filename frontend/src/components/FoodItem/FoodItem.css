@@ -1,11 +1,11 @@
 .food-item {
   display: flex;
-  gap: 16px;
+  gap: 5px;
   background: #fff;
   padding: 16px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  margin: 16px 0;
+  margin: 5px 0;
   align-items: center;
   width: 100%;
 }
